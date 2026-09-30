@@ -316,6 +316,7 @@ h1 em, h2 em {
 .brand-mark {
   width: 44px;
   height: 44px;
+  object-fit: contain;
   flex-shrink: 0;
   transition: transform var(--t-med) var(--ease);
 }
@@ -905,6 +906,8 @@ h1 em, h2 em {
 .testimonial-author img {
   width: 56px;
   height: 56px;
+  object-fit: cover;
+  border: 2px solid var(--cream-200);
   border-radius: 50%;
   background: var(--oak-300);
   flex-shrink: 0;
@@ -963,7 +966,7 @@ h1 em, h2 em {
   background:
     radial-gradient(55% 90% at 100% 50%, rgba(224, 122, 69, 0.4), transparent 70%),
     linear-gradient(90deg, rgba(17, 12, 10, 0.95) 0%, rgba(17, 12, 10, 0.75) 60%, rgba(17, 12, 10, 0.45) 100%),
-    url("assets/images/texture-roasted-beans-dark.jpg") center / cover no-repeat;
+    url("assets/images/cta-pour-over-steam.jpg") 70% center / cover no-repeat;
 }
 
 .cta-inner {

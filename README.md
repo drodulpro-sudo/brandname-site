@@ -12,6 +12,7 @@ Open `index.html` in a browser and it works.
 
 ```
 index.html            → All page content (one page, anchored sections)
+favicon.ico           → Browser tab icon (16/32/48px)
 style.css             → All styling, organised into numbered sections
 vercel.json           → Optional static-hosting config (caching + security headers)
 README.md             → This file
@@ -26,13 +27,14 @@ assets/
     ├── why-fresh-roast-beans-cooling.jpg      Why Us: Day 0
     ├── why-packing-shipping.jpg               Why Us: within 48 hours
     ├── why-cupping-table.jpg                  Why Us: on arrival
-    ├── texture-roasted-beans-dark.jpg         Background texture (Why Us + CTA band)
+    ├── texture-roasted-beans-dark.jpg         Background texture (Why Us)
+    ├── cta-pour-over-steam.jpg                CTA band background
     ├── og-share-roaster.jpg                   Social share image (1200×630)
-    ├── logo-mark.svg                          Logo for light backgrounds
-    ├── logo-mark-light.svg                    Logo for dark backgrounds (header/footer)
-    ├── favicon.svg / favicon-32.png           Browser icons
+    ├── logo-mark.png                          Logo for light backgrounds (transparent)
+    ├── logo-mark-light.png                    Logo for dark backgrounds (header/footer)
+    ├── favicon-32.png                         Browser icon (plus /favicon.ico at root)
     ├── apple-touch-icon.png                   iOS home-screen icon (180×180)
-    └── avatar-placeholder-01..03.svg          Illustrated placeholder avatars (fictional)
+    └── avatar-placeholder-01..03.jpg          AI-generated portraits of fictional people (placeholders)
 ```
 
 ## Page sections

@@ -34,7 +34,7 @@ assets/
     ├── logo-mark-light.png                    Logo for dark backgrounds (header/footer)
     ├── favicon-32.png                         Browser icon (plus /favicon.ico at root)
     ├── apple-touch-icon.png                   iOS home-screen icon (180×180)
-    └── avatar-placeholder-01..03.jpg          AI-generated portraits of fictional people (placeholders)
+    └── avatar-placeholder-01..03.jpg          Placeholder portraits for testimonials
 ```
 
 ## Page sections

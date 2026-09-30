@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== Primary SEO ===== -->
+  <title>Ember &amp; Oak Coffee Roasters | Small-Batch Coffee, Roasted Weekly in Portland, OR</title>
+  <meta name="description" content="Ember &amp; Oak roasts small-batch coffee every week in Portland, Oregon and ships within 48 hours of roasting. Single-origin subscriptions, wholesale for cafés and restaurants, and barista training workshops.">
+  <meta name="keywords" content="small batch coffee roaster, Portland coffee roasters, single origin coffee subscription, wholesale coffee Portland, barista training Portland, fresh roasted coffee">
+  <meta name="author" content="Ember &amp; Oak Coffee Roasters">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1C1512">
+  <!-- Replace with your live domain once deployed -->
+  <link rel="canonical" href="https://www.example.com/">
+
+  <!-- ===== Open Graph / Social ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ember &amp; Oak Coffee Roasters">
+  <meta property="og:title" content="Ember &amp; Oak Coffee Roasters — Roasted this week. Shipped within 48 hours.">
+  <meta property="og:description" content="Small-batch coffee roasted every week in Portland, OR and shipped within 48 hours of roasting, so every bag arrives at peak flavour.">
+  <meta property="og:image" content="assets/images/og-share-roaster.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Freshly roasted coffee beans pouring from a drum roaster into a cooling tray">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ember &amp; Oak Coffee Roasters">
+  <meta name="twitter:description" content="Small-batch coffee, roasted weekly in Portland and shipped within 48 hours of roasting.">
+  <meta name="twitter:image" content="assets/images/og-share-roaster.jpg">
+
+  <!-- ===== Icons ===== -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- ===== Fonts (CSS only — falls back to system serif/sans offline) ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- ===== Styles ===== -->
+  <link rel="preload" as="image" href="assets/images/hero-roaster-drum-ember.jpg">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- =========================================================
+       1. HEADER / NAVIGATION
+       Mobile menu uses a CSS-only checkbox toggle (no JavaScript).
+       ========================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Ember &amp; Oak Coffee Roasters — back to top">
+        <img class="brand-mark" src="assets/images/logo-mark-light.png" alt="" width="44" height="44">
+        <span class="brand-text">
+          <span class="brand-name">Ember &amp; Oak</span>
+          <span class="brand-tag">Coffee Roasters</span>
+        </span>
+      </a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open or close the main menu">
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </label>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Coffee &amp; Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-ember nav-cta" href="#services">Start a Subscription</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =========================================================
+         2. HERO
+         ========================================================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="dot" aria-hidden="true"></span> Small-batch roastery · Portland, Oregon</p>
+          <h1 id="hero-title" class="hero-title">Roasted this week.<br><em>At your door</em> within 48&nbsp;hours.</h1>
+          <p class="hero-lede">
+            Ember &amp; Oak roasts coffee in small batches every single week, then ships within 48 hours of the roast.
+            No warehouse shelf, no mystery dates — just coffee that arrives while it still tastes the way
+            the farmer and the roaster intended.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-ember btn-lg" href="#services">Explore Subscriptions</a>
+            <a class="btn btn-ghost-light btn-lg" href="#contact">Wholesale Enquiries</a>
+          </div>
+          <ul class="hero-points" aria-label="Key promises">
+            <li><strong>Weekly</strong> small-batch roasting</li>
+            <li><strong>48 hrs</strong> roast-to-ship</li>
+            <li><strong>Single-origin</strong> beans</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="hero-figure">
+            <img src="assets/images/hero-roaster-drum-ember.jpg"
+                 alt="Freshly roasted coffee beans pouring out of a cast-iron drum roaster into a rotating cooling tray, lit by a warm ember glow"
+                 width="1376" height="768" loading="eager" fetchpriority="high">
+          </figure>
+          <!-- Roast ticket: edit the bracketed values each week -->
+          <aside class="roast-ticket" aria-label="This week's roast log">
+            <p class="ticket-label">Roast log</p>
+            <dl class="ticket-rows">
+              <div><dt>Batch</dt><dd>[No. —]</dd></div>
+              <div><dt>Origin</dt><dd>[This week's origin]</dd></div>
+              <div><dt>Roasted</dt><dd>[Roast day]</dd></div>
+              <div><dt>Ships</dt><dd class="ticket-hot">Within 48 hrs</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticker strip (decorative) -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Roasted weekly</span><span>✦</span><span>Shipped within 48 hours</span><span>✦</span>
+        <span>Small batch, never bulk</span><span>✦</span><span>Single-origin subscriptions</span><span>✦</span>
+        <span>Wholesale for cafés &amp; restaurants</span><span>✦</span><span>Barista training</span><span>✦</span>
+        <span>Roasted weekly</span><span>✦</span><span>Shipped within 48 hours</span><span>✦</span>
+        <span>Small batch, never bulk</span><span>✦</span><span>Single-origin subscriptions</span><span>✦</span>
+        <span>Wholesale for cafés &amp; restaurants</span><span>✦</span><span>Barista training</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         3. ABOUT
+         ========================================================= -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-media">
+          <figure class="about-figure">
+            <img src="assets/images/about-roaster-hands-beans.jpg"
+                 alt="A roaster in a canvas apron cupping a handful of freshly roasted coffee beans over a cooling tray on an oak workbench"
+                 width="800" height="993" loading="lazy">
+          </figure>
+          <p class="about-stamp"><span>Kiln Yard</span><span>Portland, OR</span></p>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow">Our story</p>
+          <h2 id="about-title" class="section-title">A roastery built around one stubborn idea: <em>fresh means fresh.</em></h2>
+          <p>
+            Most coffee is roasted in huge volumes, bagged, and left to wait — in a warehouse, on a pallet, on a shelf —
+            long after its best flavours have faded. We started Ember &amp; Oak to do the opposite.
+          </p>
+          <p>
+            From our roastery at 14 Kiln Yard in Portland, we roast in small batches every week. Each batch gets
+            our full attention: we listen for first crack, watch the colour, taste every roast, and adjust.
+            Then it's bagged and out the door within 48 hours.
+          </p>
+
+          <h3 class="subhead">Who we roast for</h3>
+          <ul class="audience-list">
+            <li>
+              <span class="audience-num">01</span>
+              <div>
+                <strong>Home brewers</strong>
+                <p>People who own a grinder, care about the roast date, and want their morning cup to taste like the tasting notes promise.</p>
+              </div>
+            </li>
+            <li>
+              <span class="audience-num">02</span>
+              <div>
+                <strong>Cafés &amp; restaurants</strong>
+                <p>Owners who want a roasting partner that delivers consistent, freshly roasted beans on a reliable schedule.</p>
+              </div>
+            </li>
+            <li>
+              <span class="audience-num">03</span>
+              <div>
+                <strong>Baristas &amp; teams</strong>
+                <p>Staff who want hands-on skills — dialling in espresso, milk texture, and service — taught by people who roast the beans.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. SERVICES / PRODUCTS
+         ========================================================= -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Coffee &amp; services</p>
+          <h2 id="services-title" class="section-title">Four ways to drink, serve, and master fresher coffee.</h2>
+          <p class="section-intro">Whether you're brewing one cup at home or pulling hundreds of shots a day, every offering starts in the same place: a small batch, roasted this week.</p>
+        </header>
+
+        <div class="service-grid">
+
+          <article class="service-card">
+            <div class="service-media">
+              <img src="assets/images/service-small-batch-roasting.jpg"
+                   alt="A roaster pulls the trier spoon from a drum roaster to check the colour of beans mid-roast, with smoke rising"
+                   width="800" height="600" loading="lazy">
+              <span class="service-num" aria-hidden="true">01</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Small-Batch Roasting</h3>
+              <p>We roast in deliberately small batches so every roast can be watched, tasted, and fine-tuned. Pick up whole beans or ground coffee, freshly roasted each week.</p>
+              <p class="benefit"><span class="benefit-label">Key benefit</span> Every batch gets individual attention — so you taste the bean, not a bulk recipe.</p>
+              <a class="text-link" href="#contact">Ask about this week's roasts <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media">
+              <img src="assets/images/service-single-origin-subscription.jpg"
+                   alt="Three kraft paper coffee bags tied with twine beside roasted beans and an open shipping box on an oak table"
+                   width="800" height="600" loading="lazy">
+              <span class="service-num" aria-hidden="true">02</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Single-Origin Subscriptions</h3>
+              <p>Rotating single-origin coffees, roasted to order and shipped to your door on your schedule. Explore how origin, process, and altitude change what's in your cup.</p>
+              <p class="benefit"><span class="benefit-label">Key benefit</span> Fresh coffee arrives before you run out — shipped within 48 hours of roasting.</p>
+              <p class="price-placeholder">Plans &amp; pricing: <span class="placeholder">[Add subscription pricing]</span></p>
+              <a class="text-link" href="#contact">Start a subscription <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media">
+              <img src="assets/images/service-wholesale-cafe-supply.jpg"
+                   alt="A barista pulls an espresso shot behind a café counter with sacks and bags of coffee beans stacked on oak shelves"
+                   width="800" height="600" loading="lazy">
+              <span class="service-num" aria-hidden="true">03</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Wholesale for Cafés &amp; Restaurants</h3>
+              <p>Freshly roasted beans for your espresso bar, brew menu, or dinner service, supplied on a regular schedule. We'll help you choose coffees that suit your menu and equipment.</p>
+              <p class="benefit"><span class="benefit-label">Key benefit</span> Your customers taste coffee roasted days ago, not months ago — cup after cup.</p>
+              <a class="text-link" href="#contact">Request wholesale info <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media">
+              <img src="assets/images/service-barista-training.jpg"
+                   alt="An instructor guides a trainee's hands as they pour latte art into a cup during a barista workshop"
+                   width="800" height="600" loading="lazy">
+              <span class="service-num" aria-hidden="true">04</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Barista Training Workshops</h3>
+              <p>Hands-on sessions covering espresso extraction, grind and dose, milk texturing, and latte art. Suitable for new café teams, experienced baristas, and serious home brewers.</p>
+              <p class="benefit"><span class="benefit-label">Key benefit</span> Learn from the people who roast the beans — and get more out of every bag.</p>
+              <p class="price-placeholder">Dates &amp; fees: <span class="placeholder">[Add workshop schedule]</span></p>
+              <a class="text-link" href="#contact">Book a workshop <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. WHY CHOOSE US
+         ========================================================= -->
+    <section class="section why" id="why-us" aria-labelledby="why-title">
+      <div class="container">
+        <header class="section-head section-head-light">
+          <p class="eyebrow eyebrow-light">Why Ember &amp; Oak</p>
+          <h2 id="why-title" class="section-title">Coffee has a peak. <em>We ship at it.</em></h2>
+          <p class="section-intro">Roasted coffee is at its most vibrant in the days and weeks after roasting. Our whole operation — batch size, schedule, shipping — is built to get it to you inside that window.</p>
+        </header>
+
+        <ol class="timeline" aria-label="From roaster to your cup">
+          <li class="timeline-step">
+            <figure class="timeline-media">
+              <img src="assets/images/why-fresh-roast-beans-cooling.jpg"
+                   alt="Glossy, freshly roasted coffee beans being stirred in a cooling tray with steam rising"
+                   width="700" height="700" loading="lazy">
+            </figure>
+            <p class="timeline-day">Day 0</p>
+            <h3>Roasted in a small batch</h3>
+            <p>Every week, not every quarter. Small batches mean we can taste and adjust each roast instead of running a one-size recipe.</p>
+          </li>
+          <li class="timeline-step">
+            <figure class="timeline-media">
+              <img src="assets/images/why-packing-shipping.jpg"
+                   alt="Hands packing kraft coffee bags into a cardboard shipping box on a wooden bench"
+                   width="700" height="700" loading="lazy">
+            </figure>
+            <p class="timeline-day">Within 48 hours</p>
+            <h3>Packed &amp; shipped</h3>
+            <p>Your coffee leaves the roastery within 48 hours of roasting. It never sits on a warehouse pallet waiting for an order.</p>
+          </li>
+          <li class="timeline-step">
+            <figure class="timeline-media">
+              <img src="assets/images/why-cupping-table.jpg"
+                   alt="Overhead view of a coffee cupping table with rows of ceramic bowls, silver spoons and dishes of beans"
+                   width="700" height="700" loading="lazy">
+            </figure>
+            <p class="timeline-day">On arrival</p>
+            <h3>In your cup at its peak</h3>
+            <p>Brighter acidity, fuller aroma, sweeter finish. The tasting notes on the bag are the notes you'll actually taste.</p>
+          </li>
+        </ol>
+
+        <div class="compare" role="region" aria-label="Comparison: warehouse coffee versus Ember and Oak">
+          <div class="compare-col compare-them">
+            <h3>Typical warehouse coffee</h3>
+            <ul>
+              <li>Roasted in bulk, often far ahead of sale</li>
+              <li>Can sit in storage and on shelves for months</li>
+              <li>Roast date hard to find — or missing</li>
+              <li>Flavour flattens before it reaches you</li>
+            </ul>
+          </div>
+          <div class="compare-col compare-us">
+            <h3>Ember &amp; Oak</h3>
+            <ul>
+              <li>Small batches, roasted every week</li>
+              <li>Shipped within 48 hours of roasting</li>
+              <li>Roast date on every bag</li>
+              <li>Arrives at peak flavour</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. SOCIAL PROOF
+         All content below is PLACEHOLDER — replace with real,
+         verified reviews, numbers and partner logos before launch.
+         ========================================================= -->
+    <section class="section proof" id="reviews" aria-labelledby="proof-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Kind words</p>
+          <h2 id="proof-title" class="section-title">What people say after the first fresh bag.</h2>
+          <p class="placeholder-note" role="note"><strong>Placeholder content:</strong> the testimonials, figures and logos in this section are examples for layout only. Replace them with real, verified customer feedback before publishing.</p>
+        </header>
+
+        <dl class="stats">
+          <div class="stat"><dt>Batches roasted</dt><dd>[000+]</dd></div>
+          <div class="stat"><dt>Wholesale partners</dt><dd>[00]</dd></div>
+          <div class="stat"><dt>Baristas trained</dt><dd>[000]</dd></div>
+          <div class="stat stat-real"><dt>Roast-to-ship window</dt><dd>48 hrs</dd></div>
+        </dl>
+
+        <div class="testimonial-grid">
+          <article class="testimonial">
+            <p class="testimonial-tag">Placeholder testimonial</p>
+            <blockquote>
+              <p>“I didn't realise how flat my old coffee was until the first bag arrived. The roast date was from that week, and you could smell it the moment I opened the box.”</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img src="assets/images/avatar-placeholder-01.jpg" alt="Placeholder portrait: a smiling café owner in a denim apron" width="56" height="56" loading="lazy">
+              <div>
+                <p class="author-name">[Customer name]</p>
+                <p class="author-role">Subscription customer · Example</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial">
+            <p class="testimonial-tag">Placeholder testimonial</p>
+            <blockquote>
+              <p>“Consistency is everything behind the bar. Knowing every delivery was roasted that week means our espresso tastes the same on Monday as it does on Saturday.”</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img src="assets/images/avatar-placeholder-02.jpg" alt="Placeholder portrait: a bearded restaurant owner in a dark shirt" width="56" height="56" loading="lazy">
+              <div>
+                <p class="author-name">[Owner name]</p>
+                <p class="author-role">Restaurant owner · Example</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial">
+            <p class="testimonial-tag">Placeholder testimonial</p>
+            <blockquote>
+              <p>“The workshop finally made dialling in click for me. Learning from the people who roasted the beans made all the difference.”</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img src="assets/images/avatar-placeholder-03.jpg" alt="Placeholder portrait: a home brewer in a knit sweater" width="56" height="56" loading="lazy">
+              <div>
+                <p class="author-name">[Attendee name]</p>
+                <p class="author-role">Workshop attendee · Example</p>
+              </div>
+            </footer>
+          </article>
+        </div>
+
+        <div class="logo-slots">
+          <p class="logo-slots-title">Poured at <span class="placeholder">[wholesale partner logos — placeholder]</span></p>
+          <ul class="logo-row">
+            <li>Partner logo</li>
+            <li>Partner logo</li>
+            <li>Partner logo</li>
+            <li>Partner logo</li>
+            <li>Partner logo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. CALL TO ACTION BAND
+         ========================================================= -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow eyebrow-light">Next roast day is coming</p>
+          <h2 id="cta-title" class="cta-title">Taste the difference <em>a week</em> makes.</h2>
+          <p class="cta-copy">Start a single-origin subscription, set up wholesale supply for your café, or book your team into a workshop. Tell us what you need and we'll take it from there.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-ember btn-lg" href="#contact">Get Started</a>
+          <a class="btn btn-ghost-light btn-lg" href="#services">Explore Coffee</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         8. CONTACT
+         UI only — no backend. Connect to a form service (e.g.
+         Formspree, Netlify Forms, Basin) by changing the form's
+         action attribute. See README.md.
+         ========================================================= -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contact-title" class="section-title">Let's talk coffee.</h2>
+          <p>Subscriptions, wholesale, workshops, or just a question about brewing — send us a note and a real person from the roastery will reply.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Roastery</span>
+              <address>14 Kiln Yard, Marlow Street<br>Portland, OR 97209</address>
+            </li>
+            <li>
+              <span class="contact-label">Email</span>
+              <span class="placeholder">[hello@yourdomain.com]</span>
+            </li>
+            <li>
+              <span class="contact-label">Phone</span>
+              <span class="placeholder">[(000) 000-0000]</span>
+            </li>
+            <li>
+              <span class="contact-label">Hours</span>
+              <span class="placeholder">[Add opening / roasting hours]</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#contact" method="get" aria-label="Contact form">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="phone">Phone <span class="optional">(optional)</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Best number to reach you">
+            </div>
+            <div class="field">
+              <label for="topic">I'm interested in</label>
+              <select id="topic" name="topic">
+                <option>Single-origin subscription</option>
+                <option>Wholesale supply</option>
+                <option>Barista training workshop</option>
+                <option>Small-batch roasts</option>
+                <option>Something else</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us a little about what you're looking for…" required></textarea>
+          </div>
+          <p class="form-note">Fields marked <span class="req" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
+          <button class="btn btn-ember btn-lg btn-block" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       9. FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#home" aria-label="Ember &amp; Oak Coffee Roasters — back to top">
+          <img class="brand-mark" src="assets/images/logo-mark-light.png" alt="" width="44" height="44">
+          <span class="brand-text">
+            <span class="brand-name">Ember &amp; Oak</span>
+            <span class="brand-tag">Coffee Roasters</span>
+          </span>
+        </a>
+        <p>Small-batch coffee, roasted every week in Portland and shipped within 48 hours of roasting.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer navigation">
+        <h2 class="footer-heading">Explore</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Coffee &amp; Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Visit</h2>
+        <address>14 Kiln Yard, Marlow Street<br>Portland, OR 97209</address>
+        <p><span class="placeholder">[hello@yourdomain.com]</span><br><span class="placeholder">[(000) 000-0000]</span></p>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Follow</h2>
+        <!-- Replace # with your real profile URLs -->
+        <ul class="social-list">
+          <li><a href="#" aria-label="Ember &amp; Oak on Instagram (link placeholder)">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>
+            Instagram</a></li>
+          <li><a href="#" aria-label="Ember &amp; Oak on Facebook (link placeholder)">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v7h4v-7h3l.5-4H14V8.6c0-.4.3-.6.7-.6z" fill="currentColor"/></svg>
+            Facebook</a></li>
+          <li><a href="#" aria-label="Ember &amp; Oak on LinkedIn (link placeholder)">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 9h3v11H5zM6.5 3.8a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6zM10 9h2.9v1.5c.5-.9 1.7-1.8 3.4-1.8 3.2 0 3.7 2.1 3.7 4.8V20h-3v-5.8c0-1.4 0-3.1-1.9-3.1s-2.1 1.5-2.1 3V20h-3z" fill="currentColor"/></svg>
+            LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Ember &amp; Oak Coffee Roasters. All rights reserved.</p>
+      <a class="back-to-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+</body>
+</html>
